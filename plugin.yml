@@ -1,0 +1,13 @@
+name: WelcomeTweaker
+main: ecstsy\WelcomeTweaker\Loader
+api: 5.0.0
+version: 1.0.0
+author: ecstsy
+
+permissions:
+  command.toggleinfo:
+    default: true
+  command.setmessages:
+    default: op
+  command.setrewards:
+    default: op

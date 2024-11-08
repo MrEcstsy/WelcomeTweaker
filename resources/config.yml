@@ -1,0 +1,37 @@
+# (!) DO NOT TOUCH (!)
+version: 1.0
+
+settings:
+  # Toggle information
+  information:
+    enabled: true
+    # List of available tags:
+    # {PLAYER_NAME} - Name of the player
+    # {PLAYER_NAMETAG} - Nametag of the player
+    # {SERVER_PING} - Player ping
+    # {SERVER_ONLINE} - Amount of players on the server
+    # {SERVER_MAX} - Maximum amount of players on the server
+    # {SERVER_IP} - Server IP
+    # {SERVER_PORT} - Server port
+    # {SERVER_VERSION} - Server version
+    messages:
+      - "&r&l&8=&7=&8=&7=&8=&7=&8=&7=&8=&7=&8="
+      - "&r&fWelcome to the server &8{PLAYER_NAME}&f."
+      - "&r&l&8=&7=&8=&7=&8=&7=&8=&7=&8=&7=&8="
+  join:
+    enabled: true
+    message: "&r&l&8[&r&a+&l&8] &r&7{PLAYER_NAME}"
+    items: # These will be given on a players first time joining
+      - item: "diamond_sword"
+        name: "&r&aStarter Sword"
+        lore: 
+          - "&r&7The infamous starter sword"
+        amount: 1
+        enchantments:
+          - enchant: "sharpness"
+            level: 1
+      - item: "steak"            
+        amount: 16
+  leave:
+    enabled: true
+    message: "&r&l&8[&r&c-&l&8] &r&7{PLAYER_NAME}"
